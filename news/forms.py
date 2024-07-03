@@ -6,13 +6,14 @@ from .models import Comment
 BAD_WORDS = (
     'редиска',
     'негодяй',
+    'торчок',
+    'отбитый',
     # Дополните список на своё усмотрение.
 )
 WARNING = 'Не ругайтесь!'
 
 
 class CommentForm(ModelForm):
-
     class Meta:
         model = Comment
         fields = ('text',)
